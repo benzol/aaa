@@ -15,11 +15,11 @@ class Picpost extends Post {
         picarr[0] = picp1.date;
         picarr[1] = picp1.head;
         picarr[2] = picp1.newtext;
-        picarr[3] = picp1.head;
+        picarr[3] = picp1.tag;
         picarr[4] = picadd;
         
-        System.out.println(picp1.date + " " + picp1.newtext + " " + picadd);
-
+        //System.out.println(picp1.date + " " + picp1.newtext + " " + picadd);
+        // System.out.println(picarr[0] + " " + picarr[1]);
         return picarr;
         
     }
