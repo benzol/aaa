@@ -5,14 +5,15 @@ public abstract class Post {
 
     String date;
     String newtext;
-
-
+    String tag;
+    String head;
+    
     public void newpost() {
 
-        date = blog.Randomizer.Date();
-        newtext = blog.Randomizer.TextGen();
-
-        
+        date = Randomizer.Date();
+        newtext = Randomizer.TextGen();
+        tag = Randomizer.Tag();
+        head = Randomizer.Head();
         
     }
 }

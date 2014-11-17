@@ -53,4 +53,37 @@ public class Randomizer {
 
     }
 
+        public static String Tag() {
+
+            String[] tagarray = {"business",
+                    "cats",
+                    "blablabla",
+                    "lydybr",
+                    "very short notice"};
+
+            int oneLength = tagarray.length;
+                int randtag = (int) (Math.random() * oneLength);
+                String tag = tagarray[randtag];
+
+                return tag;
+
+        }
+        
+        
+        public static String Head() {
+
+            String[] headarray = {"Head placeholder",
+                    "Random quote",
+                    "Everyone like cats",
+                    "Nothing personal",
+                    "Strictly business"};
+
+            int oneLength = headarray.length;
+                int randhead = (int) (Math.random() * oneLength);
+                String head = headarray[randhead];
+
+                return head;
+
+        }
+        
     }
