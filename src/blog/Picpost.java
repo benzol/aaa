@@ -3,9 +3,6 @@ package blog;
 
 
 class Picpost extends Post {
-
-//    private static String picadd;
-//    private static String[] picarr = new String[5];
     
     static String[] newpicmethod() {
 
