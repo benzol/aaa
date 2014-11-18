@@ -6,16 +6,16 @@ import java.io.IOException;
 
 public class Html {
 
-	public static void output() throws IOException {
+	public static void output(PostTemplate pt) throws IOException {
 
 		String[] arrout = new String[5];
-		arrout = Picpost.newpicmethod();
+		arrout = pt.get();
 		
 File file = new File("c:\\post.html");
 if (!file.exists()){
     file.createNewFile();
 }
-FileWriter fw = new FileWriter(file, false);
+FileWriter fw = new FileWriter(file, true);
 fw.write("<html>\r\n" +
         "<head>\r\n" +
         "<meta HTTP-EQUIV=\"Content-type\" CONTENT=\"text/html; charset=UTF-8\">\r\n" +

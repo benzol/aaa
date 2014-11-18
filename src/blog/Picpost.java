@@ -4,22 +4,22 @@ package blog;
 
 class Picpost extends Post {
 
-    static String picadd;
-    static String[] picarr = new String[5];
+//    private static String picadd;
+//    private static String[] picarr = new String[5];
     
-    public static String[] newpicmethod() {
+    static String[] newpicmethod() {
 
     	Picpost picp1 = new Picpost();
     	picp1.newpost();
-        picadd = blog.Randomizer.Pic();
-        picarr[0] = picp1.date;
-        picarr[1] = picp1.head;
-        picarr[2] = picp1.newtext;
-        picarr[3] = picp1.tag;
-        picarr[4] = picadd;
+    	String picadd = blog.Randomizer.Pic();
         
-        //System.out.println(picp1.date + " " + picp1.newtext + " " + picadd);
-        // System.out.println(picarr[0] + " " + picarr[1]);
+        String[] picarr = new String[5];
+        picarr[0] = picp1.getdate();
+        picarr[1] = picp1.gethead();
+        picarr[2] = picp1.getnewtext();
+        picarr[3] = picp1.gettag();
+        picarr[4] = picadd;
+
         return picarr;
         
     }
